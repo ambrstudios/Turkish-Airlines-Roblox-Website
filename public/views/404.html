@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Airlines</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <style>
+    body {
+            background-image: url("assets/img/CockpitBg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="html-include/header"></div>
+    
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    
+    <div class="container" style="text-align: center; background-color: rgb(230, 230, 230); border-radius: 10px; padding: 20px;">
+        <h1 class="font-weight-normal">Error 404</h1>
+        <br/>
+        <p class="font-weight-normal">Page not found</p>
+    </div>
+    
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+        
+    <!-- Footer -->
+    <div data-include="html-include/footer"></div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+      $(function(){
+        var includes = $('[data-include]');
+        jQuery.each(includes, function(){
+          var file = 'views/' + $(this).data('include') + '.html';
+          $(this).load(file);
+        });
+      });
+    </script>
+</body>
+
+</html>

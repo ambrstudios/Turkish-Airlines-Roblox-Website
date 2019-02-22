@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Airlines</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <meta name="description" content="Turkish Airlines is a leading virtual airline on Roblox">
+    <meta name="keywords" content="Aviation, Roblox, Ro-Aviation, Planes, Aircraft, Turkish Airlines">
+    <meta name="author" content="Theta Aviation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> 
+    <!-- Header -->
+    <div data-include="html-include/header"></div>
+    
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; max-width: 1500px; margin-left: auto; margin-right: auto;">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/img/Carousel1.png" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome</h5>
+            <p>To the home of top-quality, professionally hosted flights.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/Carousel2.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Technology</h5>
+            <p>Enjoy our revolutionary technology, made by the experts of Ro-Aviation.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/Carousel3.png" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aircraft</h5>
+            <p>Enjoy our beautifully modelled aircraft, with a cabins that fit everyone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br/>
+    
+    <div class="container" style="width: 80%; margin-left: auto; margin-right: auto; padding: 20px">
+        <h2>Products</h2>
+        <hr/>
+        
+        <div class="container" style="text-align: center;">
+            <div class="row" style="display: flex;">
+                <h4 style="font-weight: normal" class="col-sm-4">
+                    Five Senses Hoodie
+                    <hr/>
+                    <img src="https://t1.rbxcdn.com/16490155210d831369017e92193d76ac" style="height:200px">
+                    <hr/>
+                    <form action="https://www.roblox.com/catalog/1435407922/Five-Senses-Turkish-Airlines-Black-Hoodie">
+                        <input type="submit" class="btn outline btn-outline-danger" value="R$5">
+                    </form>
+                </h4>
+                <h4 style="font-weight: normal" class="col-sm-4">
+                    Business Class
+                    <hr/>
+                    <img src="https://www.iata.org/training/PublishingImages/logo-rtp-turkish.png" style="height:200px">
+                    <hr/>
+                    <form action="https://www.roblox.com/catalog/2683948161/Business-Class">
+                        <input type="submit" class="btn outline btn-outline-danger" value="R$500">
+                    </form>
+                </h4>
+                <h4 style="font-weight: normal" class="col-sm-4">
+                    Black Hoodie
+                    <hr/>
+                    <img src="https://t3.rbxcdn.com/c87104c7f573d07027b8dc7d08036038" style="height:200px">
+                    <hr/>
+                    <form action="https://www.roblox.com/catalog/983813282/Turkish-Airlines-Offical-Black-Hoodie">
+                        <input type="submit" class="btn outline btn-outline-danger" value="R$5">
+                    </form>
+                </h4>
+            </div>
+            
+            <a href='https://www.roblox.com/catalog/?Category=1&CreatorID=331562164&SortType=3&IncludeNotForSale=false&Direction=2' style="float: right">View More</a>
+        </div>
+    </div>
+    
+    <br/>
+    
+    <div class="container" style="margin-left: auto; margin-right: auto; padding: 20px; text-align: center">
+        <a class="twitter-timeline" data-height="500" href="https://twitter.com/TKRBLX?ref_src=twsrc%5Etfw%22%3E">Tweets by TKRBLX</a>
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <!-- Footer -->
+    <div data-include="html-include/footer"></div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/shared.js0"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <!-- Include HTML -->
+    <script>
+      $(function(){
+        var includes = $('[data-include]');
+        jQuery.each(includes, function(){
+          var file = 'views/' + $(this).data('include') + '.html';
+          $(this).load(file);
+        });
+      });
+    </script>
+</body>
+
+</html>
